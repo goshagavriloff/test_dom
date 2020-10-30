@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="header-content">
+              <div class="mobile_nav">
+                <a href="#" class="menu__mobile menu__mobile_nav"><span></span></a>
+                <a href="#">En</a>
+                <a href="#">Ru</a>
+                <div class="menu__mobile__content">
+                  <ul>
+                      <li>Дайджест</li>
+                      <li>Документы</li>
+                      <li>Вопросы профессионалу</li>
+                  </ul>
+                </div>
+              </div>
+                <div class="logo"></div>
+                <div class="menu">
+                    <ul>
+                        <li>Дайджест</li>
+                        <li>Документы</li>
+                        <li>Вопросы профессионалу</li>
+                    </ul>
+
+                </div>
+                <div class="options">
+                  <img src="./img/en.png" alt="en">
+                  <img src="./img/ru.png" alt="ru">
+                  <button type="button" name="button" class='submit-red'>Вход и регистрация</button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section>
+      <div class="container">
+        <div id="slider-content">
+          <div class="slider-title">
+            <h1>Наш каталог содержит сотни предложений по аренде и продаже жилой и коммерческой деятельности</h1>
+          </div>
+
+          <div class="slider-page">
+            <article class="">
+              <div class="slider-list">
+
+                <div class="slider-item">
+                  <div class="slider-item-image">
+
+                  </div>
+                  <div class="slider-item-descr">
+                    <h2>Гендиректор выступит на форуме недвижимости...</h2>
+                  </div>
+
+                </div>
+
+                <div class="slider-item">
+                  <div class="slider-item-image">
+
+                  </div>
+                  <div class="slider-item-descr">
+                    <h2>Уникальный проекты на Кипре...</h2>
+                  </div>
+
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-image">
+
+                  </div>
+                  <div class="slider-item-descr">
+                    <h2>Мы говорим и размещаем объявления на трех...</h2>
+                  </div>
+
+                </div>
+                <div class="slider-item">
+                  <div class="slider-item-image">
+
+                  </div>
+                  <div class="slider-item-descr">
+                    <h2>Информация обо всех объектах недвижимости</h2>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+<script type="text/javascript">
+  let el=document.querySelector('.menu__mobile_nav');
+  el.addEventListener("click",(e)=>{
+
+    el.querySelector('span').classList.toggle('open');
+    document.querySelector('.menu__mobile__content').classList.toggle('show');
+  },false);
+</script>
+</html>

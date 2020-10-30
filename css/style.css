@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.container{
+  max-width: 1140px;
+  display: block;
+  margin:0 auto;
+}
+
+
+#header-content{
+  display: flex;
+  justify-content: space-between;
+  margin:20px 0;
+
+}
+#header-content .logo{
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 120px;
+}
+
+#header-content .menu ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#header-content .menu ul li{
+  list-style: none;
+  text-transform:uppercase;
+  padding: 0 0 0 25px;
+  position: relative;
+  font-weight: bold;
+}
+#header-content .menu ul li:nth-child(n+2):before{
+  content:"•";
+  color:red;
+  position: absolute;
+  left:10px;
+}
+
+#header-content .options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header-content .options img{
+  margin:0 5px;
+}
+#header-content .options button{
+  margin:0 0 0 25px;
+}
+.submit-red{
+  background-color: #eb1e22;
+  padding: 15px 30px;
+  color:#ffffffff;
+  border:none;
+  border-radius: 5px;
+}
+
+
+#slider-content{
+  background-image: url(../img/slider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.slider-title{
+  height: 300px;
+  color:#ffffffff;
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0,0,0, 0.5));
+  display: flex;
+  align-items: center;
+
+}
+.slider-title h1{
+  font-size: 24px;
+line-height: 36px;
+  font-weight: bold;
+  max-width: 845px;
+  padding: 0 0 0 25px;
+  position: relative;
+}
+.slider-page{
+    background: #eb1e22;
+}
+.slider-list{
+  display: flex;
+  justify-content: space-around;
+
+  min-height: 200px;
+  flex-flow:row wrap;
+}
+.slider-item{
+  position: relative;
+  bottom: 70px;
+}
+.slider-item:nth-child(1) .slider-item-image{
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0,0,0, 0.5)), url(../img/slide-item-0.png);
+  background-position: left top;
+}
+.slider-item:nth-child(2) .slider-item-image{
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0,0,0, 0.5)), url(../img/slide-item-1.png);
+  background-position: left bottom;
+}
+.slider-item:nth-child(3) .slider-item-image{
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0,0,0, 0.5)), url(../img/slide-item-2.png);
+  background-position: -60px center;
+}
+.slider-item:nth-child(4) .slider-item-image{
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.5),rgba(0,0,0, 0.5)), url(../img/slide-item-3.png);
+}
+.slider-item-image{
+  background-repeat: no-repeat;
+/*  background-size: cover;*/
+  height: 150px;
+  width: 230px;
+}
+
+.slider-item-descr{
+  max-width: 230px;
+  color:#ffffffff;
+  text-align: justify;
+  font-size: 11px;
+  line-height: 28px;
+}
+
+.slider-title h1:before{
+  position: absolute;
+  top:-60px;
+  font-size: 11px;
+  content: 'Новости';
+  background-color: #eb1e22;
+  color:#ffffffff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider-item:nth-child(1) .slider-item-descr:before{
+  position: absolute;
+  top:30px;
+  left:25px;
+  font-size: 11px;
+  content: 'Статьи';
+  background-color: #eb1e22;
+  color:#ffffffff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider-item:nth-child(2) .slider-item-descr:before{
+  position: absolute;
+  top:30px;
+  left:25px;
+  font-size: 11px;
+  content: 'Документы';
+  background-color: #eb1e22;
+  color:#ffffffff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider-item:nth-child(3) .slider-item-descr:before{
+  position: absolute;
+  top:30px;
+  left:25px;
+  font-size: 11px;
+  content: 'Лайфхаки';
+  background-color: #eb1e22;
+  color:#ffffffff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider-item:nth-child(4) .slider-item-descr:before{
+  position: absolute;
+  top:30px;
+  left:25px;
+  font-size: 11px;
+  content: 'Вопросы-ответы';
+  background-color: #eb1e22;
+  color:#ffffffff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
