@@ -6,6 +6,15 @@
 .mobile_nav a:nth-child(n+2){
   display: none;
 }
+
+#header-content .options button,
+.menu__mobile{
+  margin:0 0 0 10px !important;
+}
+.submit-red{
+  padding: 15px;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -22,6 +31,9 @@
   margin:0 auto;
   max-width: 550px;
 }
+
+
+
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
@@ -63,7 +75,7 @@
     border: 1px solid #dadada;
     border-radius: 16px;
     font-size: 14px;
-line-height: 20px;
+/*line-height: 20px;*/
 margin: 0 5px;
 }
 .mobile_nav a:hover{
